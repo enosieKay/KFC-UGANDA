@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media print {
+  @page {
+    margin: 20mm;
+  }
+
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  button {
+    display: none !important;
+  }
+
+  .shadow-lg {
+    box-shadow: none !important;
+  }
+
+  .bg-gray-50 {
+    background-color: white !important;
+  }
+
+  .max-w-2xl {
+    max-width: none !important;
+  }
+}
+
+/* You can add small global styles here */
+.emoji { font-size: 2.25rem; line-height: 1; }
